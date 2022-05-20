@@ -12,4 +12,9 @@ public class Station {
 	public void add_wait(Student a) {
 		wait_line.add(a);
 	}
+	public Queue<Student> get_line() {
+		Queue<Student> line = new LinkedList();
+		line = wait_line;
+		return line;
+	}
 }
